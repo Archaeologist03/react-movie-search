@@ -19,6 +19,7 @@ function Background(props) {
         alt="background img"
         src={props.img}
       />
+      <div className="backgroundImg-container__overlay" />
     </div>
   );
 }

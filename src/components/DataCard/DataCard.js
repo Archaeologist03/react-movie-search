@@ -3,9 +3,16 @@ import './dataCard.scss';
 
 function DataCard(props) {
 
+  let imgStyles = {
+    width: "40%",
+    float: "left",
+    height: "100%",
+  }
+
   return(
     <div className="dataCard-container">
-      Hi from data Card
+      {props.mainState.original_title}
+      <img style={imgStyles} alt="poster img" src={props.mainState.poster_path}/>
 
     </div>
   )

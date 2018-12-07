@@ -1,9 +1,9 @@
 .dataCard-container {
-  width: 60%;
+  width: 100%;
   height: 80vh;
   border: 4px solid ghostwhite;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  float: left;
+  margin-top: 25px;
+  background: linear-gradient(to bottom, #000000fb, #0a0a0a9f, #000000);
 }

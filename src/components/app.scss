@@ -1,5 +1,9 @@
 .searchInput-and-DataCard-container {
   border: 4px solid goldenrod;
-  height: 333px;
   overflow: hidden;
+  width: 70%;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 40px;
 }
