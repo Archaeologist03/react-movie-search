@@ -13,8 +13,9 @@ body {
 }
 
 *::placeholder {
-  color: rgb(5, 5, 5);
+  color: rgb(255, 187, 187);
   // padding-right: 5px;
   // text-indent: -2%;
   overflow: visible;
+  font-weight: 100;
 }

@@ -8,7 +8,7 @@ function SearchInput(props) {
     fontSize: 20,
     border: "none",
     borderTop: "none",
-    borderBottom: "2px solid black",
+    borderBottom: "1px solid white",
     backgroundColor: "transparent",
     outline: "none",
     float: "right",
@@ -30,7 +30,7 @@ function SearchInput(props) {
       <input
         style={inputStyles}
         type="text"
-        placeholder="Search for em gem's"
+        placeholder="Search for em movie's"
         // value={props.mainState.searchQuery}
         onChange={props.inputChange}
         onKeyPress={props.enterPressed}

@@ -78,9 +78,11 @@ class App extends React.Component {
         runtime,
         tagline,
         vote_average,
+        inputText: "",
       });
     });
   }
+  
 
   // Changing state when searchQuery changes(when user press enter). Displays new movie if state.searchQuery was changed.
   componentDidUpdate(prevProps, prevState) {
@@ -118,6 +120,7 @@ class App extends React.Component {
             runtime,
             tagline,
             vote_average,
+            inputText: "",
           });
         })
         .catch(err => console.log(err, "Bad query"));
@@ -137,6 +140,7 @@ class App extends React.Component {
     if (e.key === "Enter") {
       this.setState({
         searchQuery: this.state.inputText,
+        inputText: "",
       });
     }
   }

@@ -5,12 +5,16 @@
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: rgb(17, 16, 16);
   // overflow: hidden;
 
   &__image {
     width: 100%;
     height: 100%;
     display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__overlay {
@@ -21,10 +25,10 @@
     height: 100%;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.801) 10%,
+      rgba(0, 0, 0, 0.856) 10%,
       rgba(10, 10, 10, 0.31) 20%,
       rgba(10, 10, 10, 0.31) 75%,
-      rgba(0, 0, 0, 0.801) 85%
+      rgba(0, 0, 0, 0.856) 85%
     );
   }
 }

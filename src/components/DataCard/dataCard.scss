@@ -6,4 +6,15 @@
   float: left;
   margin-top: 25px;
   background: linear-gradient(to bottom, #000000fb, #0a0a0a9f, #000000);
+
+  &__image {
+    width: 40%;
+    float: left;
+    height: 100%;
+  }
+}
+
+.movie-title {
+  display: inline-block;
+  margin-left: 30px;
 }
