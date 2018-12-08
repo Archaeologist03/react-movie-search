@@ -8,25 +8,28 @@ class SearchInput extends React.Component {
 
   render() {
     const inputStyles = {
-      padding: "8px",
+      // paddingBottom: "3px",
       color: "rgb(233, 233, 233)",
       fontSize: 20,
       border: "none",
-      borderTop: "none",
+      // borderTop: "none",
       borderBottom: "1px solid white",
       backgroundColor: "transparent",
       outline: "none",
       float: "right",
       width: "55%",
       position: "absolute",
-      bottom: 0,
+      top: "15%",
       right: 0,
+      height: "75%",
+      marginTop: 0,
     };
 
     const inputContainerStyles = {
       // border: "2px solid red",
       overflow: "visible",
       position: "relative",
+      
     };
 
     return (

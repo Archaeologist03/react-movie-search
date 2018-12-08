@@ -4,6 +4,7 @@ import "./dataCard.scss";
 import MovieTitle from "./MovieTitle";
 import MovieTagline from "./MovieTagline";
 import MovieOverview from "./MovieOverview";
+import MovieGenres from './MovieGenres';
 
 class DataCard extends React.Component {
   shouldComponentUpdate(nextProps) {
@@ -27,6 +28,7 @@ class DataCard extends React.Component {
           <MovieTitle>{this.props.mainState.original_title}</MovieTitle>
           <MovieTagline>{this.props.mainState.tagline}</MovieTagline>
           <MovieOverview>{this.props.mainState.overview}</MovieOverview>
+          <MovieGenres genres={this.props.mainState.genres}/>
         </div>
       </div>
     );

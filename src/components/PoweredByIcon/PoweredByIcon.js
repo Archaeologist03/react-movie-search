@@ -4,11 +4,15 @@ import image from "../../img/powered-by-rectangle-green.svg";
 function PoweredByIcon(props) {
   let stylesImg = {
     // border: "2px solid red",
-    width: "130px",
+    width: "35%",
+    display: "block",
   };
   let stylesDiv = {
-    // border: "5px solid green",
+    // border: "2px solid green",
+    width: 'fit-content',
     display: "inline-block",
+    height: "75%",
+    marginTop: 0,
   };
 
   return (

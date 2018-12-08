@@ -36,6 +36,7 @@ class App extends React.Component {
       vote_average: "",
       inputText: "",
       searchQuery: "v for vendeta",
+      didMount: false,
       // doesExist: true,
       // id: "",
       // url: "",
@@ -81,6 +82,7 @@ class App extends React.Component {
         tagline,
         vote_average,
         inputText: "",
+        didMount: true,
       });
     });
   }
@@ -150,10 +152,12 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state);
+    
     return (
       <div className="container">
         <Background img={this.state.backdrop_path} />
-        <div className="searchInput-and-DataCard-container">
+        <div className={"searchInput-and-DataCard-container " + (this.state.didMount ? 'showContent' : '')}>
           <SearchInput
             mainState={this.state}
             inputChange={this.handleInputChange}
