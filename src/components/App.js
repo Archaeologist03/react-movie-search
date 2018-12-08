@@ -49,6 +49,8 @@ class App extends React.Component {
   componentDidMount() {
     let url = movieSearch(this.state.searchQuery);
     fethcingData(url, movieIdSearch).then(data => {
+      console.log(data);
+
       let {
         original_title,
         backdrop_path,
@@ -82,11 +84,13 @@ class App extends React.Component {
       });
     });
   }
-  
 
-  // Changing state when searchQuery changes(when user press enter). Displays new movie if state.searchQuery was changed.
+  // Changing state when searchQuery changes(when user press enter). Displays new movie if state.searchQuery was changed and isn't falsy.
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.searchQuery !== prevState.searchQuery) {
+    if (
+      this.state.searchQuery !== prevState.searchQuery &&
+      this.state.searchQuery
+    ) {
       let url = movieSearch(this.state.searchQuery);
 
       fethcingData(url, movieIdSearch)
@@ -163,16 +167,6 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
 
 // Hm.. would this work if i had another component that is parrent of app, for example in index, and pass this func as props to app.
 
