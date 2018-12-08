@@ -2,34 +2,30 @@ import React from "react";
 import PoweredByIcon from "../PoweredByIcon/PoweredByIcon";
 
 class SearchInput extends React.Component {
-  shouldComponentUpdate(nextProps) {    
+  shouldComponentUpdate(nextProps) {
     return false;
   }
 
   render() {
+    const inputContainerStyles = {
+      overflow: "visible",
+      position: "relative",
+      marginBottom: "15px",
+    };
     const inputStyles = {
-      // paddingBottom: "3px",
       color: "rgb(233, 233, 233)",
-      fontSize: 20,
+      fontSize: "1.5rem",
       border: "none",
-      // borderTop: "none",
       borderBottom: "1px solid white",
       backgroundColor: "transparent",
       outline: "none",
-      float: "right",
-      width: "55%",
+      // float: "right",
+      width: "57%",
       position: "absolute",
       top: "15%",
-      right: 0,
+      right: "0%",
       height: "75%",
       marginTop: 0,
-    };
-
-    const inputContainerStyles = {
-      // border: "2px solid red",
-      overflow: "visible",
-      position: "relative",
-      
     };
 
     return (

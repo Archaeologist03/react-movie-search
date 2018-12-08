@@ -3,12 +3,10 @@ import image from "../../img/powered-by-rectangle-green.svg";
 
 function PoweredByIcon(props) {
   let stylesImg = {
-    // border: "2px solid red",
-    width: "35%",
+    width: "45%",
     display: "block",
   };
   let stylesDiv = {
-    // border: "2px solid green",
     width: 'fit-content',
     display: "inline-block",
     height: "75%",
