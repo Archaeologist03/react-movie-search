@@ -1,7 +1,7 @@
 // Formating number values to string formated number. Adding comma every 3rd item from behind, cutting of first comma if number has it e.g: ,123,456 = $123,456. 
 
-function revenueFormating(revenue) {
-  revenue = revenue.toString();
+function revenueFormating(rev) {
+  let revenue = rev.toString();
   let formatedRevenue = [];
   let counter = 0;
 
