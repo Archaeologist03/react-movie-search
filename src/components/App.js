@@ -50,7 +50,6 @@ class App extends React.Component {
   componentDidMount() {
     let url = movieSearch(this.state.searchQuery);
     fethcingData(url, movieIdSearch).then(data => {
-
       let {
         original_title,
         backdrop_path,
@@ -151,11 +150,15 @@ class App extends React.Component {
   }
 
   render() {
-    
     return (
       <div className="container">
         <Background img={this.state.backdrop_path} />
-        <div className={"searchInput-and-DataCard-container " + (this.state.didMount ? 'showContent' : '')}>
+        <div
+          className={
+            "searchInput-and-DataCard-container " +
+            (this.state.didMount ? "showContent" : "")
+          }
+        >
           <SearchInput
             mainState={this.state}
             inputChange={this.handleInputChange}
