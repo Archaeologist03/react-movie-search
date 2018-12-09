@@ -1,0 +1,24 @@
+.poweredByIcon-container {
+  width: fit-content;
+  display: inline-block;
+  // height: 75%;
+  // margin-top: 0;
+
+  @media only screen and(max-width: 420px) {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 45%;
+
+    @media only screen and(max-width: 420px) {
+      width: 35%;
+    }
+  }
+}

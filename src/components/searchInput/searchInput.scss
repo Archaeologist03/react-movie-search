@@ -1,0 +1,25 @@
+.searchInput-container {
+  input {
+    color: rgb(233, 233, 233);
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    // float: right;
+    width: 57%;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    height: 75%;
+    user-select: text;
+
+    @media only screen and (max-width: 420px) {
+      width: 95%;
+      position: relative;
+      right: 45%;
+      transform: translateX(50%);
+      height: 40px;
+    }
+  }
+}

@@ -15,6 +15,11 @@
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    background-color: black;
+
+    @media only screen and (max-width: 670px) {
+      opacity: 0.3;
+    }
   }
 
   &__overlay {
@@ -26,12 +31,12 @@
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.884) 15%,
-      rgba(10, 10, 10, 0.61) 25%,
-      rgba(10, 10, 10, 0.103) 45%,
-      rgba(10, 10, 10, 0.438) 65%,
-      rgba(10, 10, 10, 0.603) 70%,
-      rgba(0, 0, 0, 0.856) 80%,
-      rgba(0, 0, 0, 0.956) 90%
+      rgba(0, 0, 0, 0.61) 25%,
+      rgba(0, 0, 0, 0.103) 45%,
+      rgba(0, 0, 0, 0.438) 65%,
+      rgba(0, 0, 0, 0.703) 70%,
+      rgba(0, 0, 0, 0.922) 80%,
+      rgba(0, 0, 0, 0.988) 90%
     );
   }
 }

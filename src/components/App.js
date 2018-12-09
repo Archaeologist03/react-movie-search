@@ -3,9 +3,9 @@ import React from "react";
 // --------- HELPER FUNCTIONS ------------
 // movieSearch: Format link based on query(user input-enter) == movieSearch(query)
 import movieSearch from "./helperFuncs/movieSearch";
-// movieIdSearch: Format link based on id == movieIdSearch(id)
+// movieIdSearch: Format url based on id == movieIdSearch(id)
 import movieIdSearch from "./helperFuncs/movieIdSearch";
-// movieImage: Image url formater == movieImage(url, size)
+// movieImage: Format img url  == movieImage(url, size)
 import movieImage from "./helperFuncs/movieImage";
 // fetchingData: Async helper func to get movie with query, and then with movieIdSearch callback getting more info on particular movie
 import fethcingData from "./helperFuncs/fetchingData";
@@ -35,7 +35,7 @@ class App extends React.Component {
       tagline: "",
       vote_average: "",
       inputText: "",
-      searchQuery: "v for vendeta",
+      searchQuery: "A SPACE ODYSSEY",
       didMount: false,
       // doesExist: true,
       // id: "",
@@ -50,7 +50,6 @@ class App extends React.Component {
   componentDidMount() {
     let url = movieSearch(this.state.searchQuery);
     fethcingData(url, movieIdSearch).then(data => {
-      console.log(data);
 
       let {
         original_title,
@@ -141,7 +140,7 @@ class App extends React.Component {
     });
   }
 
-  // Handling Enter key. 1) On enter press set searchQuery of state to current state.inputText.
+  // Handling Enter key. 1) On enter press set state.searchQuery to current state.inputText.
   handleEnterPress(e) {
     if (e.key === "Enter") {
       this.setState({
@@ -152,7 +151,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     
     return (
       <div className="container">

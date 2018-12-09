@@ -10,11 +10,12 @@ class Background extends React.Component {
   }
 
   render() {
+    
     return (
       <div className="backgroundImg-container">
         <img
           className="backgroundImg-container__image"
-          alt="background img"
+          alt=""
           src={this.props.img}
         />
         <div className="backgroundImg-container__overlay"></div>
