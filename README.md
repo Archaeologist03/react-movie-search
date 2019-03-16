@@ -4,7 +4,7 @@
 # Install dependencies 
 npm install
 
-# Open dev mode on [http://localhost:3000](http://localhost:3000)
+# Open dev mode on http://localhost:3000
 npm start
 
 ```
