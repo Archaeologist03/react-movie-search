@@ -1,13 +1,13 @@
 ## Quick Start
 
-```bash
-# Install dependencies 
-npm install
+##### 1) Clone repo:
+`git clone https://github.com/Archaeologist03/react-movie-search.git`
 
-# Open dev mode on http://localhost:3000
-npm start
+##### 2) Install needed packages
+`npm install`
 
-```
+##### 3) Start app(dev)
+`npm start`
 
 
 
